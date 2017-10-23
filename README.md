@@ -1,2 +1,2 @@
-# skyportal.github.io
-skyportal website
+# Skyportal
+[Documentation](http://skyportal.io/docs)
