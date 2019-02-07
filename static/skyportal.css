@@ -17,7 +17,7 @@ body a:hover {
 
 #content {
     margin: 2em;
-    width: 40em;
+    width: 80em;
 }
 
 #navbar {
@@ -39,6 +39,8 @@ body a:hover {
 
 #header {
     display: block;
+    padding-bottom: 2em;
+    width: 38em;
 }
 
 #header img {
@@ -60,4 +62,27 @@ body a:hover {
 
 #header .subtitle {
     font-size: 150%;
+}
+
+#description {
+    vertical-align: top;
+    width: 38em;
+    display: inline-block;
+}
+
+#screenshot {
+    position: absolute;
+    padding-left: 40em;
+    width: 30em;
+    z-index: -1;
+}
+
+#screenshot img {
+    width: 30em;
+    border: 1px solid gray;
+}
+
+#description ul {
+    list-style-image: url('bullet.png');
+/*    list-style-type: lower-alpha;*/
 }

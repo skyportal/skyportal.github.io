@@ -23,6 +23,10 @@
     </div>
 
     <div id="content">
+      <div id="screenshot">
+        <img src="static/screenshot-2019-02.png"/>
+      </div>
+
       <div id="header">
         <img src="static/skyportal_logo.png"/>
         <div class="header-text">
@@ -31,7 +35,7 @@
         </div>
       </div>
 
-      <div class="description">
+      <div id="description">
         <p>
           SkyPortal is a web application that interactively displays
           astronomical datasets for annotation, analysis, and
@@ -40,22 +44,33 @@
         </p>
 
         <p>
-          The base version of SkyPortal was designed with the Zwicky Transient
-          Facility, and eventually LSST, in mind.
+          The base version of SkyPortal was designed with the <a href="https://www.ztf.caltech.edu/">Zwicky Transient</a>
+          Facility, and eventually <a href="https://www.lsst.org/">LSST</a>, in mind.
         </p>
 
-        <p>Please <a href="docs">read the documentation</a> for more on
-          installation, configuration, and development.
+        <p>For more information about installation, configuration, and
+          development, please refer to <a href="docs">the documentation</a> for more on.
         </p>
 
         <p>
-          SkyPortal is released under the Modified BSD license.  It
-          builds on top of
+          SkyPortal builds on top of
           <a href="https://github.com/cesium-ml/baselayer">baselayer</a>,
           a scientific web
           application platform developed by the same team.
         </p>
+
+        <p>
+          <ul>
+            <li>BSD license</li>
+            <li>Extendible & scalable design: a <a href="http://www.tornadoweb.org">Tornado/Python</a> backend with <a href="http://reactjs.org/">React</a> &amp; <a href="https://redux.js.org/">Redux</a> frontend</li>
+            <li>Built-in authentication via Google</li>
+            <li>Asynchronous backend/frontend communication via WebSockets</li>
+            <li>Visualization using <a href="https://bokeh.pydata.org/">Bokeh</a></li>
+            <li>Distributed computation via <a href="https://dask.org/">Dask</a></li>
+          </ul>
+        </p>
       </div>
+
     </div>
   </body>
 </html>
