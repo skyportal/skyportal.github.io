@@ -86,3 +86,15 @@ body a:hover {
     list-style-image: url('bullet.png');
 /*    list-style-type: lower-alpha;*/
 }
+
+.citation {
+    font-family: roman;
+    font-size: 90%;
+    padding: 1em;
+    background: #EEE;
+    border: 1px solid #AAA;
+}
+
+.citation .bibtex {
+    text-align: right;
+}
