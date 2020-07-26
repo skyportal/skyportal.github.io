@@ -98,3 +98,14 @@ body a:hover {
 .citation .bibtex {
     text-align: right;
 }
+
+.grant-acknowledgement {
+    width: 80em;
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: 2px solid #EEE;
+}
+
+.grant-acknowledgement img {
+    float: right;
+}
