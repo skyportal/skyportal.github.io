@@ -8,97 +8,388 @@
   </head>
 
   <body>
-    <div id="navbar">
-      <div class="navbar-entry">
-        <a href="https://github.com/skyportal/skyportal">GitHub</a>
-      </div>
-      |
-      <div class="navbar-entry">
-        <a href="docs">Documentation</a>
-      </div>
-      |
-      <div class="navbar-entry">
-        <a href="https://github.com/skyportal/skyportal/blob/master/LICENSE.txt">License</a>
-      </div>
-      |
-      <div class="navbar-entry">
-        <a style="border-width:0" href="https://doi.org/10.21105/joss.01247">
-          <img src="https://joss.theoj.org/papers/10.21105/joss.01247/status.svg" style="vertical-align: middle;" alt="DOI badge" >
-        </a>
+    <div class="navbar">
+      <a href="index.html">
+        <div class="navbar-logo">
+          <img src="static/skyportal_logo.png"/>
+          <div>
+            <h1 class="title">SkyPortal</h1>
+            <div class="subtitle">An Astronomical Data Platform</div>
+         </div>
+        </div>
+      </a>
+      <div class="navbar-menu">
+        <div class="navbar-entry">
+          <a href="https://github.com/skyportal/skyportal">GitHub</a>
+        </div>
+        <div class="navbar-entry">
+          <a href="docs">Documentation</a>
+        </div>
+        <div class="navbar-entry">
+          <a href="https://github.com/skyportal/skyportal/blob/main/LICENSE.txt">License</a>
+        </div>
+        <div class="navbar-entry">
+          |
+        </div>
+        <div class="navbar-entry">
+          <a style="border-width:0" href="https://doi.org/10.21105/joss.01247">
+            <img src="https://joss.theoj.org/papers/10.21105/joss.01247/status.svg" style="vertical-align: middle; height: 26px;" alt="DOI badge JOSS" >
+          </a>
+        </div>
+        <div class="navbar-entry">
+          <a style="border-width:0" href="https://iopscience.iop.org/article/10.3847/1538-4365/acdee1">
+            <img src="static/aas-logo.svg" style="vertical-align: middle; height: 26px; padding-right: 10px;" alt="DOI badge AAS" >
+          </a>
+        </div>
+        <div class="mobile-menu-icon">
+          <img src="static/menu.svg" style="height: 26px; padding-right: 10px;" alt="Menu" onclick="toggleMovileNavbar()">
+        </div>
       </div>
     </div>
 
-    <div id="content">
-      <div id="screenshot">
-        <img src="static/screenshot-2019-02.png"/>
-      </div>
-
-      <div id="header">
-        <img src="static/skyportal_logo.png"/>
-        <div class="header-text">
-          <div class="title">SkyPortal</div>
-          <div class="subtitle">An Astronomical Data Platform</div>
+    <div class="mobile-navbar">
+      <div class="mobile-navbar-menu">
+        <div class="mobile-navbar-entry">
+          <a href="https://github.com/skyportal/skyportal">GitHub</a>
+        </div>
+        <div class="mobile-navbar-entry">
+          <a href="docs">Documentation</a>
+        </div>
+        <div class="mobile-navbar-entry">
+          <a href="https://github.com/skyportal/skyportal/blob/main/LICENSE.txt">License</a>
+        </div>
+        <div class="mobile-navbar-entry">
+          <a style="border-width:0" href="https://doi.org/10.21105/joss.01247">
+            <img src="https://joss.theoj.org/papers/10.21105/joss.01247/status.svg" style="vertical-align: middle; height: 26px;" alt="DOI badge JOSS" >
+          </a>
+        </div>
+        <div class="mobile-navbar-entry">
+          <a style="border-width:0" href="https://iopscience.iop.org/article/10.3847/1538-4365/acdee1">
+            <img src="static/aas-logo.svg" style="vertical-align: middle; height: 26px; padding-right: 10px;" alt="DOI badge AAS" >
+          </a>
+        </div>
+        <br/>
+        <div class="mobile-menu-close-icon">
+          <img src="static/close-menu.svg" style="height: 26px; padding-right: 10px;" alt="Close Menu" onclick="toggleMovileNavbar()"">
         </div>
       </div>
+    </div>
 
-      <div id="description">
-        <p>
-          SkyPortal is a web application that interactively displays
-          astronomical datasets for annotation, analysis, and
-          discovery.  It is designed to be modular and extensible, so
-          it can be customized for various scientific use-cases.
-        </p>
+    <p class="main-text" style="padding-top: 90px; padding-bottom: 10px;">
+      A web application that <b>interactively displays
+      astronomical datasets</b> for <b>annotation, analysis, and
+      discovery.</b>
+    </p>
 
-        <p>
-          The base version of SkyPortal was designed with the <a href="https://www.ztf.caltech.edu/">Zwicky Transient</a>
-          Facility, and eventually <a href="https://www.lsst.org/">LSST</a>, in mind.
-        </p>
+    <div class="main-image">
+      <img src="static/card_images/source_page.jpg"/>
+    </div>
 
-        <p>For more information about installation, configuration, and
-          development, please refer to <a href="docs">the documentation</a>.
-        </p>
+    <div class="button-container">
+      <a href="docs">
+        <button class="large-button">
+          <b>Get started</b>
+        </button>
+      </a>
+    </div>
 
-        <p>
-          SkyPortal builds on top of
-          <a href="https://github.com/cesium-ml/baselayer">baselayer</a>,
-          a scientific web
-          application platform developed by the same team.
-        </p>
+    <div class="large-text">
+      <p> 
+        What can <b>you</b> do with SkyPortal?
+      </p>
+    </div>
 
-        <p>
-          <ul>
-            <li>BSD license</li>
-            <li>Extendible & scalable design: a <a href="http://www.tornadoweb.org">Tornado/Python</a> backend with <a href="http://reactjs.org/">React</a> &amp; <a href="https://redux.js.org/">Redux</a> frontend</li>
-            <li>API for machine usage</li>
-            <li>Fine-grained access control</li>
-            <li>Authentication via Google</li>
-            <li>Real-time Slack-like messaging</li>
-            <li>Visualization using <a href="https://bokeh.pydata.org/">Bokeh</a></li>
-            <li>Distributed computation via <a href="https://dask.org/">Dask</a></li>
-          </ul>
-        </p>
-
-        <p>If you find this software useful, please cite our <a href="http://joss.theoj.org/papers/10.21105/joss.01247">paper</a>:
-
-          <div class="citation">
-            <div>
-              St&eacute;fan J. van der Walt, Arien Crellin-Quick, Joshua S. Bloom, <em>SkyPortal: An Astronomical Data Platform</em>. Journal of Open Source Software, 4(37) 1247, May 2019. <a href="https://doi.org/10.21105/joss.01247">https://doi.org/10.21105/joss.01247</a>.
-            </div>
-
-            <div class="bibtex"><a href="static/skyportal.bib">BiBTeX</a></div>
-
-          </div>
-
-        </p>
-
-        <div class="grant-acknowledgement">
-            We thank the Gordon and Betty Moore Foundation for a <a href="https://www.moore.org/grant-detail?grantId=GBMF9122">Software SkyPortal grant</a> which partially covered the cost of the development of this project.
-
-            <a href="https://www.moore.org/grant-detail?grantId=GBMF9122"><img width=200 src="https://www.moore.org/content/images/logo-light.png"></a>
+    <div class="card-grid">
+      <div class="card">
+        <img class="card-image" src="static/card_images/dashboard.jpg"/>
+        <div class="card-text">
+          <h2>Dashboard</h2>
+          <p>
+            The dashboard is SkyPortal's landing page. It provides a quick overview of the most recent data and events. The widgets
+            are customizable from the configuration file, and can be moved around and resized by the user.
+          </p>
         </div>
-
       </div>
+      <div class="card">
+        <img class="card-image" src="static/card_images/source_page.jpg"/>
+        <div class="card-text">
+          <h2>Sources</h2>
+          <p>
+            SkyPortal's most feature-rich page, the source page, provides a detailed view of a single astronomical object. It includes
+            metadata, images, light curves, and spectra, follow-up capabilities, user comments, and more.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-image" src="static/card_images/candidates.jpg"/>
+        <div class="card-text">
+          <h2>Candidates</h2>
+          <p>
+            The candidate scanning page let's user go through potential sources coming from a filtered alert stream, and decide which
+            ones to save and/or follow up on. It includes a variety of tools to help users make decisions quickly and efficiently.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-image" src="static/card_images/gcn_events.jpg"/>
+        <div class="card-text">
+          <h2>GCN Events</h2>
+          <p>
+            SkyPortal can ingest and display any GCN notices. The dedicated page provides a detailed view of the events,
+            and let's user perform various queries, schedule observations, and report to the community.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-image" src="static/card_images/observing_runs.jpg"/>
+        <div class="card-text">
+          <h2>Observing runs</h2>
+          <p>
+            Sources can be assigned as targets for observing runs. The observing run page provides a detailed view of the run,
+            including the targets w/ priority & comments, observing conditions, star lists, and more.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-image" src="static/card_images/followup_requests.jpg"/>
+        <div class="card-text">
+          <h2>Follow-up Requests</h2>
+          <p>
+            Users can request follow-up observations from any source page. The dedicated follow-up request page provides quick access
+            to all requests for a given instrument, allocation, user, while filtering by status.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-image" src="static/card_images/shifts.jpg"/>
+        <div class="card-text">
+          <h2>Shifts</h2>
+          <p>
+            Coordinating efforts and ensuring that people are available to monitor new multi-messenger events is crucial. The shifts
+            page is a fully-featured calendar that allows users to sign up for shifts, comment, and receive notifications.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-image" src="static/card_images/telescopes.jpg"/>
+        <div class="card-text">
+          <h2>Telescopes</h2>
+          <p>
+            SkyPortal can handle a dynamic list of telescopes, each with its own set of instruments. The telescope page provides a
+            world map view of the telescopes, and in-depth information about each one.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-image" src="static/card_images/instruments.jpg"/>
+        <div class="card-text">
+          <h2>Instruments</h2>
+          <p>
+            Each telescope can have multiple instruments. The instrument page provides a detailed view of the instrument, including
+            the filters, and the API class to interact with the instrument w/ follow-up requests.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-image" src="static/card_images/allocations.jpg"/>
+        <div class="card-text">
+          <h2>Allocations</h2>
+          <p>
+            Concepts like follow-up requests & forced photometry require a system to manage the allocation of resources, time, and credentials
+            to interact with the instruments. The allocation page provides a detailed view of the allocations.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-image" src="static/card_images/tns_integration.jpg"/>
+        <div class="card-text">
+          <h2>TNS Integration</h2>
+          <p>
+            SkyPortal is fully integrated with the Transient Name Server. The TNS page lets user add their TNS credentials and optionally
+            set up automated reporting, on top of the manual object submission from the source page.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-image" src="static/card_images/analysis_service.jpg"/>
+        <div class="card-text">
+          <h2>Much more!</h2>
+          <p>
+            We've only scratched the surface of what SkyPortal can do. Other pages & API endpoints include: taxonomies, analysis services,
+            galaxies, spatial catalogs, user management... SkyPortal is designed to be flexible and extensible.
+          </p>
+        </div>
+      </div>
+    </div>
 
+    <div class="button-container" style="margin-top: 40px;">
+      <a href="https://www.youtube.com/@skyportalastronomy">
+        <button class="large-button">
+          <b>Watch the tutorials</b>
+        </button>
+      </a>
+      <a href="docs">
+        <button class="large-button">
+          <b>Read the docs</b>
+        </button>
+      </a>
+    </div>
+
+    <div class="large-text">
+      <p>
+       How does it <b>work</b>?
+      </p>
+    </div>
+
+    <div class="text-box">
+      <p>
+        SkyPortal builds on top of
+        <a href="https://github.com/cesium-ml/baselayer">baselayer</a>,
+        a scientific web
+        application platform developed by the same team. The base version of SkyPortal was designed with the <a href="https://www.ztf.caltech.edu/">Zwicky Transient</a> Facility, and eventually <a href="https://www.lsst.org/">LSST</a>, in mind.
+      </p>
+      <br/>
+      <p>Some of the key design features of SkyPortal include:</p>
+      <ul>
+        <li>Built on top of <a href="https://github.com/cesium-ml/baselayer">baselayer</a>, a modular scientific web application platform developed by the same team.</li>
+        <li>BSD license</li>
+        <li>Extendible & scalable design: a <a href="http://www.tornadoweb.org">Tornado/Python</a> backend with <a href="http://reactjs.org/">React</a> &amp; <a href="https://redux.js.org/">Redux</a> frontend</li>
+        <li>API for machine usage</li>
+        <li>Fine-grained access control</li>
+        <li>Authentication via Google</li>
+        <li>Real-time Slack-like messaging</li>
+        <li>Visualization using <a href="https://bokeh.pydata.org/">Bokeh</a></li>
+        <li>Distributed computation via <a href="https://dask.org/">Dask</a></li>
+      </ul>
+      <br/>
+      <p>
+        For more information about installation, configuration, and
+        development, please refer to <a href="docs">the documentation</a>.
+      </p>
+    </div>
+
+    <div class="large-text">
+      <p>
+        If you find this software useful, <b>please cite our papers</b>:
+      </p>
+    </div>
+
+    <div class="citation">
+      <p>
+        Coughlin, Michael W., et al., <em>A Data Science Platform to Enable Time-domain Astronomy.</em>
+        Publications of the Astrophysical Journal Supplement Series, 267, 2, Jul 2023.
+        <a href="https://doi.org/10.3847/1538-4365/acdee1">https://doi.org/10.3847/1538-4365/acdee1</a>.
+      </p>
+      <pre class="bibtex" id="bibtex-coughlin2023">@article{Coughlin_2023,
+  doi = {10.3847/1538-4365/acdee1},
+  url = {https://dx.doi.org/10.3847/1538-4365/acdee1},
+  year = {2023},
+  month = {jul},
+  publisher = {The American Astronomical Society},
+  volume = {267},
+  number = {2},
+  pages = {31},
+  author = {Michael W. Coughlin and Joshua S. Bloom and Guy Nir and Sarah Antier and Theophile Jegou du Laz and Stéfan van der Walt and Arien Crellin-Quick and Thomas Culino and Dmitry A. Duev and Daniel A. Goldstein and Brian F. Healy and Viraj Karambelkar and Jada Lilleboe and Kyung Min Shin and Leo P. Singer and Tomás Ahumada and Shreya Anand and Eric C. Bellm and Richard Dekany and Matthew J. Graham and Mansi M. Kasliwal and Ivona Kostadinova and R. Weizmann Kiendrebeogo and Shrinivas R. Kulkarni and Sydney Jenkins and Natalie LeBaron and Ashish A. Mahabal and James D. Neill and B. Parazin and Julien Peloton and Daniel A. Perley and Reed Riddle and Ben Rusholme and Jakob van Santen and Jesper Sollerman and Robert Stein and D. Turpin and Avery Wold and Carla Amat and Adrien Bonnefon and Adrien Bonnefoy and Manon Flament and Frank Kerkow and Sulekha Kishore and Shloke Jani and Stephen K. Mahanty and Céline Liu and Laura Llinares and Jolyane Makarison and Alix Olliéric and Inès Perez and Lydie Pont and Vyom Sharma},
+  title = {A Data Science Platform to Enable Time-domain Astronomy},
+  journal = {The Astrophysical Journal Supplement Series},
+  abstract = {SkyPortal is an open-source software package designed to discover interesting transients efficiently, manage follow-up, perform characterization, and visualize the results. By enabling fast access to archival and catalog data, crossmatching heterogeneous data streams, and the triggering and monitoring of on-demand observations for further characterization, a SkyPortal-based platform has been operating at scale for &gt;2 yr for the Zwicky Transient Facility Phase II community, with hundreds of users, containing tens of millions of time-domain sources, interacting with dozens of telescopes, and enabling community reporting. While SkyPortal emphasizes rich user experiences across common front-end workflows, recognizing that scientific inquiry is increasingly performed programmatically, SkyPortal also surfaces an extensive and well-documented application programming interface system. From back-end and front-end software to data science analysis tools and visualization frameworks, the SkyPortal design emphasizes the reuse and leveraging of best-in-class approaches, with a strong extensibility ethos. For instance, SkyPortal now leverages ChatGPT large language models to generate and surface source-level human-readable summaries automatically. With the imminent restart of the next generation of gravitational-wave detectors, SkyPortal now also includes dedicated multimessenger features addressing the requirements of rapid multimessenger follow-up: multitelescope management, team/group organizing interfaces, and crossmatching of multimessenger data streams with time-domain optical surveys, with interfaces sufficiently intuitive for newcomers to the field. This paper focuses on the detailed implementations, capabilities, and early science results that establish SkyPortal as a community software package ready to take on the data science challenges and opportunities presented by this next chapter in the multimessenger era.}
+}</pre>
+      <button id="bibtex-coughlin2023-button-show" class="bibtex-button" onclick="toggleBibtex('bibtex-coughlin2023')">
+        Show BiBTeX
+      </button>
+      <button id="bibtex-coughlin2023-button-hide" class="bibtex-button" onclick="toggleBibtex('bibtex-coughlin2023')" style="display:none;">
+        Hide BiBTeX
+      </button>
+    </div>
+
+    <div class="citation">
+      <p>
+        St&eacute;fan J. van der Walt, Arien Crellin-Quick, Joshua S. Bloom, <em>SkyPortal: An Astronomical Data Platform</em>.
+        Journal of Open Source Software, 4(37) 1247, May 2019.
+        <a href="https://doi.org/10.21105/joss.01247">https://doi.org/10.21105/joss.01247</a>.
+      </p>
+      <pre class="bibtex" id="bibtex-skyportal2019">@article{skyportal2019,
+  author = {St\'efan J. van der Walt and Arien Crellin-Quick and Joshua S. Bloom},
+  title = {{SkyPortal}: An Astronomical Data Platform},
+  journal = {Journal of Open Source Software},
+  volume = {4},
+  number = {37},
+  page = {1247},
+  year = {2019},
+  month = {may},
+  doi = {10.21105/joss.01247},
+  url = {http://joss.theoj.org/papers/10.21105/joss.01247}
+}</pre>
+      <button id="bibtex-skyportal2019-button-show" class="bibtex-button" onclick="toggleBibtex('bibtex-skyportal2019')">
+        Show BiBTeX
+      </button>
+      <button id="bibtex-skyportal2019-button-hide" class="bibtex-button" onclick="toggleBibtex('bibtex-skyportal2019')" style="display:none;">
+        Hide BiBTeX
+      </button>
+    </div>
+
+    <div class="large-text">
+      <p>
+        <b>Acknowledgements</b>
+      </p>
+    </div>
+
+    <div class="grant-acknowledgement">
+      <p>
+        We thank the Gordon and Betty Moore Foundation for a
+        <a href="https://www.moore.org/grant-detail?grantId=GBMF9122">Software SkyPortal grant</a>
+        which partially covered the cost of the development of this project.
+      </p>
+      <a href="https://www.moore.org/grant-detail?grantId=GBMF9122"><img width=200 src="https://www.moore.org/content/images/logo-light.png"></a>
     </div>
   </body>
+
+  <script>
+    function toggleMovileNavbar() {
+      var navbar = document.getElementsByClassName("mobile-navbar-menu")[0];
+      if (navbar.style.display === "none" || navbar.style.display === "") {
+        navbar.style.display = "flex";
+        // remove the fade-out class
+        navbar.classList.remove("slide-out-to-right");
+        // animate it with the fade-in class
+        navbar.classList.add("slide-in-from-right");
+      } else {
+        // remove the fade-in class
+        navbar.classList.remove("slide-in-from-right");
+        // animate it with the fade-out class
+        navbar.classList.add("slide-out-to-right");
+        setTimeout(function() {
+          navbar.style.display = "none";
+        }, 500);
+      }
+    }
+    function toggleBibtex(element_id) {
+      var bibtex = document.getElementById(element_id);
+      var bibtex_show_button = document.getElementById(element_id + "-button-show");
+      var bibtex_hide_button = document.getElementById(element_id + "-button-hide");
+      if (bibtex.style.display === "none" || bibtex.style.display === "") {
+        bibtex.style.display = "block";
+        bibtex_show_button.style.display = "none";
+        bibtex_hide_button.style.display = "block";
+      } else {
+        bibtex.style.display = "none";
+        bibtex_show_button.style.display = "block";
+        bibtex_hide_button.style.display = "none";
+      }
+    }
+
+    const startAnimation = (entries, observer) => {
+      entries.forEach(entry => {
+        entry.target.classList.toggle("fade-in", entry.isIntersecting);
+      });
+    };
+
+    const observer = new IntersectionObserver(startAnimation);
+    const options = { root: null, rootMargin: '0px', threshold: 1 }; 
+
+    const elements = document.querySelectorAll('.card');
+    elements.forEach(el => {
+      observer.observe(el, options);
+    });
+  </script>
 </html>
