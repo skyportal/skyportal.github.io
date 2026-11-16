@@ -1,2 +1,2 @@
 # Skyportal
-[Documentation](http://skyportal.io/docs)
+[Documentation](https://docs.skyportal.io)
